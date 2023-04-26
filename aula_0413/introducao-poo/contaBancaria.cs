@@ -10,8 +10,12 @@ class Program {
     Console.WriteLine(x.GetSaldo());
     x.Depositar(1000);
     Console.WriteLine(x.GetSaldo());
-    if (x.Sacar(1400)) Console.WriteLine(x.GetSaldo());
-    else Console.WriteLine("Saldo insuficiente");
+
+    if (x.Sacar(1400)) 
+      Console.WriteLine(x.GetSaldo());
+    else 
+      Console.WriteLine("Saldo insuficiente");
+    
     Console.WriteLine(x);
   }
 }
@@ -19,11 +23,14 @@ class ContaBancaria {
   private string titular = "sem nome";
   private string numConta = "sem número";
   private double saldo;
-  public ContaBancaria() { }
+
+  //Construtor: é invocado automaticamente quando um objeto é criado, enquanto os métodos precisam ser chamados explicitamente.
+  // public ContaBancaria() { }
   public ContaBancaria(string t, string n) {
     if (t != "") titular = t;
     SetNumConta(n);
   }
+  //métodos
   public void SetTitular(string titular) { 
     if (titular != "") this.titular = titular; 
   }
@@ -32,7 +39,7 @@ class ContaBancaria {
   }
   public void Depositar(double v) { 
     if (v < 0) throw new ArgumentOutOfRangeException();
-    if (v > 0) saldo += v; 
+    if (v > 0) saldo += v;
   }
   public bool Sacar(double v) { 
     if (v < 0) throw new ArgumentOutOfRangeException();
@@ -42,6 +49,7 @@ class ContaBancaria {
   public string GetTitular() { return titular; }
   public string GetNumConta() { return numConta; }
   public double GetSaldo() { return saldo; }
+
   public override string ToString() {
     return $"{titular} {numConta} {saldo:f2}";
   }

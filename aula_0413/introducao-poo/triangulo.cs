@@ -9,7 +9,7 @@ class Triangulo{
 
 class Program {
     public static void Main(string[] args) {
-        Triangulo x; // variável da classa, referência. Tipo.
+        Triangulo x; // variável da classe, referência. Tipo.
         x = new Triangulo(); // instancia; objeto criado; objeto existe aqui com base e altura 0;
         x.b = 10; //valores nos campos da classe;
         x.h = 20;
