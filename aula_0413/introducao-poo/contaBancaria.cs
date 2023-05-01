@@ -2,9 +2,7 @@ using System;
 class Program {
   public static void Main() {
     ContaBancaria x = new ContaBancaria("Gilbert", "1234");
-    //ContaBancaria x = new ContaBancaria();
-    //x.SetTitular("Gilbert");
-    //x.SetNumConta("1234");
+
     Console.WriteLine(x.GetTitular());
     Console.WriteLine(x.GetNumConta());
     Console.WriteLine(x.GetSaldo());
@@ -19,15 +17,16 @@ class Program {
     Console.WriteLine(x);
   }
 }
+
+//==============================================
+
 class ContaBancaria {
   private string titular = "sem nome";
   private string numConta = "sem número";
   private double saldo;
-
-  //Construtor: é invocado automaticamente quando um objeto é criado, enquanto os métodos precisam ser chamados explicitamente.
-  // public ContaBancaria() { }
   public ContaBancaria(string t, string n) {
-    if (t != "") titular = t;
+    // if (t != "") titular = t;
+    SetTitular(t);
     SetNumConta(n);
   }
   //métodos
