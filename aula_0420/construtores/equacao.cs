@@ -6,8 +6,14 @@ class Program {
         double b = double.Parse(Console.ReadLine());
         double c = double.Parse(Console.ReadLine());
         Equacao x = new Equacao(a, b, c);
-        Console.WriteLine($"{x.RaizesReais} | {x.Delta}");
         Console.WriteLine(x);
+
+        double x1, x2;
+        if(x.RaizesReais(out x1, out x2)){
+            Console.WriteLine($"x1 = {x1}, x2 = {x2}");
+        } else {
+            Console.WriteLine("A equação não possui raízes reais.");
+        }
     }
 }
 
@@ -31,10 +37,21 @@ class Equacao {
         c = this.c;
     }
     public double Delta(){
-
+        double delta;
+        delta = Math.Pow(b, 2) - 4 * a * c;
+        return delta;
         }
     public bool RaizesReais(out double x1, out double x2){
-
+        
+        if(this.Delta() >= 0){
+            x1 = (- b + Math.Sqrt(this.Delta())) / 2 * a;
+            x2 = (- b - Math.Sqrt(this.Delta())) / 2 * a;
+            return true;
+        } else {
+            x1 = x2 = 0;
+            return false;
+        }
+        
     }
 
     public override string ToString(){
