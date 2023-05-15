@@ -1,0 +1,16 @@
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.exe
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.deps.json
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.runtimeconfig.json
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.runtimeconfig.dev.json
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.dll
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\ref\aula_0515.dll
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\bin\Debug\net5.0\aula_0515.pdb
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.csproj.AssemblyReference.cache
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.AssemblyInfoInputs.cache
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.AssemblyInfo.cs
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.csproj.CoreCompileInputs.cache
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.dll
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\ref\aula_0515.dll
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.pdb
+C:\Users\20222014040002\Desktop\Nova pasta\POO\aula_0515\obj\Debug\net5.0\aula_0515.genruntimeconfig.cache
