@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "aula_0515/1.0.0": {
+      "retangulo/1.0.0": {
         "runtime": {
-          "aula_0515.dll": {}
+          "retangulo.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "aula_0515/1.0.0": {
+    "retangulo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

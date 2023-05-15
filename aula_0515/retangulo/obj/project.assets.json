@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\aula_0515.csproj",
-      "projectName": "aula_0515",
-      "projectPath": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\aula_0515.csproj",
+      "projectUniqueName": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\retangulo\\retangulo.csproj",
+      "projectName": "retangulo",
+      "projectPath": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\retangulo\\retangulo.csproj",
       "packagesPath": "C:\\Users\\20222014040002\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\obj\\",
+      "outputPath": "C:\\Users\\20222014040002\\Desktop\\Nova pasta\\POO\\aula_0515\\retangulo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20222014040002\\AppData\\Roaming\\NuGet\\NuGet.Config",
