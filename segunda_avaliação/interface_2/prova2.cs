@@ -25,7 +25,7 @@ class Equipe{
         }
     }
     public Jogador[] Listar(){
-        Array.Sort(jogs, 0, count); //ordena o array jogs a partir do índice 0 até o índice count
+        //Array.Sort(jogs, 0, count); //ordena o array jogs a partir do índice 0 até o índice count
         return jogs;
     }
 
@@ -73,7 +73,7 @@ class CamisaComparator :IComparer {
     public int Compare(object obj1, object obj2){
         Jogador x = (Jogador)obj1;
         Jogador y = (Jogador)obj2;
-        return -x.Camisa.CompareTo(y.Camisa);
+        return x.Camisa.CompareTo(y.Camisa);
     }
 }
 
@@ -81,14 +81,14 @@ class GolComparator : IComparer {
     public int Compare(object obj1, object obj2){
         Jogador x = (Jogador)obj1;
         Jogador y = (Jogador)obj2;
-        return x.NumGols.CompareTo(y.NumGols);
+        return -x.NumGols.CompareTo(y.NumGols);
     }
 }
 
 class Program {
     public static void Main(){
-        Jogador a = new Jogador("Zico", 10, 700);
-        Jogador b = new Jogador("sócrates", 8, 200);
+        Jogador a = new Jogador("sócrates", 8, 200);
+        Jogador b = new Jogador("Zico", 10, 700);
         Jogador c = new Jogador("Ronaldo", 1, 10);
         
         Equipe selecao = new Equipe("Brasil", 3);
