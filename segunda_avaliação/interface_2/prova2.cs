@@ -3,7 +3,6 @@
 
 using System;
 using System.Collections;
-using System.Collections.Generic;
 
 class Equipe{
     private string pais;
@@ -11,9 +10,11 @@ class Equipe{
     private int quantidadeJogadores;
     private int count = 0;
 
-    public Equipe(int q){
+    public Equipe(string p, int q){
         this.quantidadeJogadores = q;
         jogs = new Jogador[quantidadeJogadores];
+
+        this.pais = p;
     }
     public void Inserir(Jogador j){
         if(count<quantidadeJogadores){
@@ -30,7 +31,7 @@ class Equipe{
 
     public override string ToString(){
 
-        return $"{pais} | {jogs}";
+        return $"{pais}";
     }
 }
 
@@ -72,7 +73,7 @@ class CamisaComparator :IComparer {
     public int Compare(object obj1, object obj2){
         Jogador x = (Jogador)obj1;
         Jogador y = (Jogador)obj2;
-        return x.Camisa.CompareTo(y.Camisa);
+        return -x.Camisa.CompareTo(y.Camisa);
     }
 }
 
@@ -80,7 +81,7 @@ class GolComparator : IComparer {
     public int Compare(object obj1, object obj2){
         Jogador x = (Jogador)obj1;
         Jogador y = (Jogador)obj2;
-        return -x.NumGols.CompareTo(y.NumGols);
+        return x.NumGols.CompareTo(y.NumGols);
     }
 }
 
@@ -90,18 +91,18 @@ class Program {
         Jogador b = new Jogador("sócrates", 8, 200);
         Jogador c = new Jogador("Ronaldo", 1, 10);
         
-        Equipe selecao = new Equipe(10);
+        Equipe selecao = new Equipe("Brasil", 3);
         selecao.Inserir(a);
         selecao.Inserir(b);
         selecao.Inserir(c);
-        
+        Console.WriteLine($"Os jogadores da equipe do {selecao} são:");
         Jogador[] jogadores = selecao.Listar();
         foreach(Jogador i in jogadores){
             Console.WriteLine(i);
         }
-        
 
-
+        Console.WriteLine();
+        Console.WriteLine($"Ordem dos melhores artilheiros do {selecao}:");
         Jogador[] v = {a, b, c};
         Array.Sort(v, new GolComparator());
         foreach(Jogador i in v){
